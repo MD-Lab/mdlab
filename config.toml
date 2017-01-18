@@ -1,0 +1,283 @@
+# Site settings
+baseurl = "https://md-lab.github.io/"
+languageCode = "en-us"
+title = "MD 입시 연구소"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-90535116-1"
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Jinseob Kim"
+  description = "MD Lab"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "MD Lab"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "Services"
+    portfolio = "Portfolio"
+    about = "About"
+    team = "Team"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    #[[menu.postpend]]
+    #  url = "https://mathemedicine.github.io"
+    #  name = "Private Hompage"
+    #  weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Welcome To MD Lab!"
+    subtitle = "MD 입시연구소입니다."
+    buttonText = "더 보기"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Services"
+    subtitle = "의대 입시는 최상위권 학생들을 빨아들이는 블랙홀같은 존재이다. '17년 의대 수시모집의 평균 경쟁률은 약 33:1이었으며 일부 전형은 288:1을 기록하는 등 의대 선호 현상이 지속되고 있다. 한편, 입시의 패러다임이 정시에서 수시로 이동하고 있으며, 그 중에서도 학생의 역량과 적성을 종합적으로 정성평가하는 학생부 종합전형의 중요성이 커지고 있다. '17년 의대입시에서는 총 2508명의 정원 중 471명이 학생부종합전형으로 전체 수시 모집의 약 30%를 차지하며, 상위권 의대일수록 학생부종합전형의 비중이 높다. 인서울의대의 경우 학생부종합전형이 전체 수시모집의 48.2%나 차지하고 있으며, 특히 서울의대는 수시의 100%를 학생부종합전형으로 선발한다. 최근에는 인성면접이 의과대학 입시의 한 축으로 떠올랐는데, 이미 서울대를 중심으로 인제대와 한림대 등에서는 학생부 종합전형에 다중 미니 면접(Multiple Mini Interview: MMI)을 포함하여 인성을 평가하고 있다. '18년 입시부터는 서울대와 고려대를 중심으로 정시에서도 인성면접이 포함될 예정이다." 
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "의대 학생부 종합전형에 특화된 컨텐츠"
+      description = "입학전형 및 의대 소개, 의료계 이슈, 합격 노하우, 의사의 길, 추천 도서, 추천 학술대회 및 세미나, 추천 봉사활동, 인성면접 예상 문제"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-laptop"
+      title = "투어"
+      description = "전국의 시/도 교육청 혹은 희망 학교 연계."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "컨설팅"
+      description = "의사에 적합하지 않은 학생은 없습니다. 의료는 매우 큰 분야이며 어떤 성향을 가진 인재도 의대에 적합인 인재가 될 수 있습니다."
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Lorem ipsum dolor sit amet consectetur."
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "Our Story"
+    subtitle = ""
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      date = "2017.01"
+      title = "Start"
+      description = "홈페이지 개설"
+
+    
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    center = true
+    title = "Team"
+    subtitle = "의료와 입시분야의 최고 전문가들이 함께 합니다."
+    description = "Welcome New Members!"
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "jskim.jpeg"
+      name = "김진섭"
+      position = "MD, MPH"
+      reportsTo = "Organizer"
+      livesIn = "[경기도 용인](#some-maps-url)"
+      #scope = [
+      #  "UX for [member dashboard](#)",
+      #  "Maintainer for [awesome-project](#)",
+      #  "Open Source [community management](#)"
+      #]
+      # For bio markdown and even multiline strings are available.
+      bio = """인천과학고와 성균관의대를 졸업한 예방의학 전문의로 기초의학(의학통계), 임상의학(응급실 진료), 기업(삼성전자 무선사업부) 등 의사가 경험할 수 있는 다양한 경험을 쌓았다. 과거 대치동과 수원 등에서 수학 올림피아드와 논술을 강의하면서 입시 경험을 쌓았으며 이를 바탕으로 의대 입시를 전문적으로 연구하고 있다. """
+      social = [
+        ["fa-home", "https://mathemedicine.github.io"],
+        ["fa-facebook", "https://www.facebook.com/secondmath/"],
+        ["fa-linkedin", "https://www.linkedin.com/in/jinseob-kim-%EA%B9%80%EC%A7%84%EC%84%AD-456550a5?trk=hp-identity-name"]
+      ]
+	
+	
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "궁금하신 내용을 작성해 주세요."
+    buttonText = "메세지 보내기"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "secondmath85@gmail.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
